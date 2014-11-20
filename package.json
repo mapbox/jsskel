@@ -1,0 +1,19 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "test": "retire && jshint && tape test/*.js"
+  },
+  "devDependencies": {
+    "jshint": "^2.5.10",
+    "retire": "*",
+    "tape": "^3.0.3"
+  },
+  "jshintConfig": {
+    "browser": true,
+    "node": true,
+    "globalstrict": true,
+    "undef": true,
+    "unused": true,
+    "noarg": true
+  }
+}
