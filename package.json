@@ -1,7 +1,7 @@
 {
   "main": "index.js",
   "scripts": {
-    "test": "retire && jshint && tape test/*.js"
+    "test": "retire -p && jshint && tape test/*.js"
   },
   "devDependencies": {
     "jshint": "^2.5.10",
