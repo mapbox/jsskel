@@ -1,12 +1,12 @@
 {
   "main": "index.js",
   "scripts": {
-    "test": "retire -p && jshint && tape test/*.js"
+    "test": "retire -p && jshint && tap --cov test/*.js"
   },
   "devDependencies": {
     "jshint": "^2.5.10",
     "retire": "*",
-    "tape": "^3.0.3"
+    "tap": "^2.1.1"
   },
   "jshintConfig": {
     "browser": true,
