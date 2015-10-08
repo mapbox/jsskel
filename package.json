@@ -1,19 +1,12 @@
 {
   "main": "index.js",
   "scripts": {
-    "test": "retire -p && jshint && tap --cov test/*.js"
+    "test": "retire -p && eslint *.js test && tap --cov test/*.js"
   },
   "devDependencies": {
-    "jshint": "^2.5.10",
+    "eslint": "^1.6.0",
+    "eslint-config-mourner": "^1.0.1",
     "retire": "*",
     "tap": "^2.1.1"
-  },
-  "jshintConfig": {
-    "browser": true,
-    "node": true,
-    "globalstrict": true,
-    "undef": true,
-    "unused": true,
-    "noarg": true
   }
 }
