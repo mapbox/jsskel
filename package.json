@@ -1,7 +1,9 @@
 {
   "main": "index.js",
   "scripts": {
-    "test": "retire -p && eslint *.js test && tap --cov test/*.js"
+    "retire": "retire -p",
+    "lint": "eslint *.js test",
+    "test": "npm run retire && npm run lint && tap --cov test/*.js"
   },
   "devDependencies": {
     "eslint": "^1.6.0",
