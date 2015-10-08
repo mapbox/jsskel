@@ -3,9 +3,11 @@
   "scripts": {
     "retire": "retire -p",
     "lint": "eslint *.js test",
+    "docs": "documentation --lint --github --format html --output .",
     "test": "npm run retire && npm run lint && tap --cov test/*.js"
   },
   "devDependencies": {
+    "documentation": "^2.1.0-alpha2",
     "eslint": "^1.6.0",
     "eslint-config-mourner": "^1.0.1",
     "retire": "*",
