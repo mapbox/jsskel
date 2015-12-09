@@ -2,14 +2,15 @@
   "main": "index.js",
   "scripts": {
     "retire": "retire -p",
-    "lint": "eslint *.js test",
-    "docs-page": "documentation --lint --github --format html --output .",
+    "lint": "eslint *.js test && documentation --lint",
+    "docs-page": "documentation --github --format html --output .",
     "docs-readme": "documentation-readme -s API",
     "test": "npm run retire && npm run lint && tap --cov test/*.js"
   },
   "devDependencies": {
-    "documentation": "^2.1.0-alpha2",
+    "documentation": "^3.0.0",
     "documentation-readme": "^2.0.0",
+    "documentation-theme-default": "^2.1.1",
     "eslint": "^1.6.0",
     "eslint-config-mourner": "^1.0.1",
     "retire": "*",
