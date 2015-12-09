@@ -14,5 +14,8 @@
     "eslint-config-mourner": "^1.0.1",
     "retire": "*",
     "tap": "^2.1.1"
+  },
+  "eslintConfig": {
+    "extends": "mourner"
   }
 }
